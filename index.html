@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <title>Главная | Gazon</title>
+    <link rel="stylesheet" href="./assets/css/glider.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="modal_side">
+            <div class="bar">
+                <div class="close_btn"><span></span></div>
+                <h4 class="bar_title">Товар добавлен</h4>
+                <div class="cart_modal"></div>
+                <div class="bar_links">
+                    <a href="./cart.html">Перейти в корзину</a>
+                    <a href="./checkout.html">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+        <a href="./index.html" class="logo">
+            <img src="./content/icons/logo.svg" alt="logo">
+        </a>
+        <div class="cart_btn">
+            <img src="./content/icons/cart.svg" alt="cart">
+            <p class="cart_btn_count"></p>
+        </div>
+        <div class="profile_btn">
+            <img src="./content/icons/profile.svg" alt="profile">
+        </div>
+        <div class="menu_btn">
+            <img src="./content/icons/menu.svg" alt="menu">
+        </div>
+        <div class="side_bar">
+            <div class="close_btn"><span></span></div>
+            <div class="menu_bar bar">
+                <h4 class="bar_title">Меню</h4>
+                <div class="menu_container">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html" class="menu_item">Главная</a></li>
+                            <li><a href="./about.html" class="menu_item">О нас</a></li>
+                            <li><a href="./contact.html" class="menu_item">Контакты</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="all">Товары</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./products.html" class="menu_item" data-group="popular"
+                                    data-producer="all">Популярное</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="discount"
+                                    data-producer="all">Акции</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="new"
+                                    data-producer="all">Новинки</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./products.html" class="menu_item" data-group="notebook"
+                                    data-producer="all">Ноутбуки</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="phone"
+                                    data-producer="all">Телефоны</a></li>   
+                            <li><a href="./products.html" class="menu_item" data-group="headphones"
+                                    data-producer="all">Наушники</a></li>    
+                        </ul>
+                        <ul>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="apple">Apple</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="xiaomi">Xiaomi</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="samsung">Samsung</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="acer">Acer</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="lenovo">Lenovo</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="hp">HP</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="huawei">Huawei</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="nokia">Nokia</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="jbl">JBL</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="sony">Sony</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="beats">Beats</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="sennheiser">Sennheiser</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="grado">Grado</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bar_links">
+                    <a href="./cart.html">Корзина</a>
+                    <a href="./login.html" class="menu_profile_btn">Личный кабинет</a>
+                </div>
+            </div>
+            <div class="cart_bar bar">
+                <h4 class="bar_title">Ваша корзина</h4>
+                <div class="cart_data_container">
+                    <div class="cart_data"></div>
+                </div>
+                <div class="cart_info">
+                    <p class="cart_count"></p>
+                    <p class="cart_price"></p>
+                </div>
+                <div class="bar_links">
+                    <a href="./cart.html">Перейти в корзину</a>
+                    <a href="./checkout.html">Оформить заказ</a>
+                </div>
+            </div>
+            <div class="login_bar bar">
+                <h4 class="bar_title">Войти в аккаунт</h4>
+                <form>
+                    <input type="text" placeholder="Введите ваш Email" required name="email" class="email">
+                    <input type="password" placeholder="Введите ваш пароль" required name="password" class="password">
+                    <button class="login_btn">Войти</button>
+                </form>
+                <h5 class="forgot_pass_btn">Забыли пароль?</h5>
+                <div class="reg_bar">
+                    <h4>Зарегистрироваться</h4>
+                    <p>Удобное завершение оформления заказа, также вы сможете отслеживать ваши заказы.</p>
+                </div>
+                <div class="bar_links">
+                    <a href="./registration.html">Регистрация</a>
+                </div>
+            </div>
+            <div class="forgot_pass_bar bar">
+                <h4 class="bar_title">Забыли пароль?</h4>
+                <p>Пожалуйста, введите свой адрес электронной почты ниже, чтобы получить ссылку для сброса пароля.</p>
+                <form action="index.html">
+                    <input type="text" placeholder="Введите ваш Email" required name="email">
+                    <button>Сбросить пароль</button>
+                </form>
+                <h5 class="forgot_pass_back_btn">Назад</h5>
+                <div class="bar_links">
+                    <a href="./login.html">Войти</a>
+                    <a href="./registration.html">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header_text">Gazon</div>
+            <img src="./content/images/grass_logo.png" alt="logo">
+        </header>
+        <section class="category_section">
+            <div class="section_title">
+                <p>Категория товаров</p>
+            </div>
+            <div class="glade-contain">
+                <div class="category">
+                    <div class="category_item">
+                        <img src="./content/images/products/611.png" alt="slider">
+                        <a href="./products.html" data-group="popular" data-producer="all"
+                            class="category_link">Популярное</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1031.png" alt="slider">
+                        <a href="./products.html" data-group="discount" data-producer="all"
+                            class="category_link">Акции</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/632.png" alt="slider">
+                        <a href="./products.html" data-group="new" data-producer="all" class="category_link">Новинки</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/214.png" alt="slider">
+                        <a href="./products.html" data-group="notebook" data-producer="all"
+                            class="category_link">Ноутбуки</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/611.png" alt="slider">
+                        <a href="./products.html" data-group="phone" data-producer="all"
+                            class="category_link">Телефоны</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1421.png" alt="slider">
+                        <a href="./products.html" data-group="headphones" data-producer="all"
+                            class="category_link">Наушники</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/124.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="apple" class="category_link">Apple</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/813.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="xiaomi"
+                            class="category_link">Xiaomi</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/713.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="samsung"
+                            class="category_link">Samsung</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/322.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="acer" class="category_link">Acer</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/411.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="lenovo"
+                            class="category_link">Lenovo</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/512.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="hp" class="category_link">HP</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/932.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="huawei"
+                            class="category_link">Huawei</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1022.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="nokia" class="category_link">Nokia</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1122.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="jbl" class="category_link">JBL</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1312.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="sony" class="category_link">Sony</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1422.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="beats" class="category_link">Beats</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1521.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="sennheiser"
+                            class="category_link">Sennheiser</a>
+                    </div>
+                    <div class="category_item">
+                        <img src="./content/images/products/1611.png" alt="slider">
+                        <a href="./products.html" data-group="all" data-producer="grado" class="category_link">Grado</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="nowelty_section">
+            <div class="section_title">
+                <p>Новинки</p>
+            </div>
+            <div class="nowelty_container">
+                <div class="nowelty">
+                    <div class="text_box">
+                        <h4>Grado RS2e</h4>
+                        <p>Grado RS2e в твоих любимых цветах</p>
+                        <a href="./product.html" class="nowelty_link" data-id="16-3">Посмотреть</a>
+                    </div>
+                    <div class="img_box">
+                        <img src="./content/images/products/1631.png" alt="img">
+                        <img src="./content/images/products/1632.png" alt="img">
+                    </div>
+                </div>
+                <div class="nowelty">
+                    <div class="text_box">
+                        <h4>HUAWEI P30 lite</h4>
+                        <p>4/128GB и бесконечное наслаждение</p>
+                        <a href="./product.html" class="nowelty_link" data-id="9-3">Посмотреть</a>
+                    </div>
+                    <div class="img_box">
+                        <img src="./content/images/products/931.png" alt="img">
+                        <img src="./content/images/products/932.png" alt="img">
+                    </div>
+                </div>
+                <div class="nowelty">
+                    <div class="text_box">
+                        <h4>Nokia 2720 Flip</h4>
+                        <p>Поспешите купить по выгодной цене</p>
+                        <a href="./product.html" class="nowelty_link" data-id="10-3">Посмотреть</a>
+                    </div>
+                    <div class="img_box">
+                        <img src="./content/images/products/1032.png" alt="img">
+                        <img src="./content/images/products/1033.png" alt="img">
+                    </div>
+                </div>
+                <div class="nowelty">
+                    <div class="text_box">
+                        <h4>JBL JR310BT</h4>
+                        <p>Совершенно уникальный товар от JBL</p>
+                        <a href="./product.html" class="nowelty_link" data-id="11-1">Посмотреть</a>
+                    </div>
+                    <div class="img_box">
+                        <img src="./content/images/products/1111.png" alt="img">
+                        <img src="./content/images/products/1112.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products_section">
+            <div class="section_title">
+                <a href="./products.html" data-group="all" data-producer="all" class="all_products_link">Все товары</a>
+                <span>/</span>
+                <p>Популярное</p>
+            </div>
+            <div class="products"></div>
+        </section>
+        <section class="about_section">
+            <div class="section_title">
+                <p>О нас</p>
+            </div>
+            <div class="about_container">
+                <div class="content_box">
+                    <video src="./content/video/header.mp4" loop muted autoplay></video>
+                </div>
+                <div class="text_box">
+                    <h2>Gazon</h2>
+                    <p>Компания Gazon основана в 2019 году и является надежным поставщиком всего спектра IT
+                        оборудования для корпоративного сектора и частных клиентов. Основной деятельностью компании
+                        являются поставки компьютерной техники, и лицензионного программного обеспечения</p>
+                    <a href="./about.html">Больше о нас</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_container">
+                <div class="footer_boxes">
+                    <ul>
+                        <h4>О компании</h4>
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                        <li><a href="https://hh.ru/" target="_blank">Вакансии</a></li>
+                        <li><a href="./login.html" class="footer_profile_btn">Личный кабинет</a></li>
+                    </ul>
+                    <ul>
+                        <h4>Контакты</h4>
+                        <li><a href="https://2gis.com/" target="_blank">Бишкек, Токтогула 8</a></li>
+                        <li><a href="mailto:gazon@.gmail.com">gazon@.gmail.com</a></li>
+                        <li><a href="tel:+996700533503">+996 700 533 503</a></li>
+                        <li><a href="tel:+996500533503">+996 500 533 503</a></li>
+                    </ul>
+                    <ul>
+                        <h4>Товары</h4>
+                        <li><a href="./products.html" data-group="all" data-producer="all">Все товары</a></li>
+                        <li><a href="./products.html" data-group="notebook" data-producer="all">Ноутбуки</a></li>
+                        <li><a href="./products.html" data-group="phone" data-producer="all">Телефоны</a></li>
+                        <li><a href="./products.html" data-group="headphones" data-producer="all">Наушники</a></li>
+                    </ul>
+                </div>
+                <div class="call_back">
+                    <h4>Оставьте номер, и мы вам перезвоним.</h4>
+                    <form action="index.html">
+                        <input type="text" placeholder="Ваш номер" required>
+                        <button>Отправить</button>
+                    </form>
+                    <div class="follow_us">
+                        <h4>Ищите нас в соц сетях</h4>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./content/icons/instagram.svg" alt="instagram"></a>
+                        <a href="https://wa.me/+996500533503" target="_blank"><img src="./content/icons/whatsapp.svg" alt="whatsapp"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./content/icons/youtube.svg" alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="footer_title">© 2019 gazon - <a href="https://en.wikipedia.org/wiki/All_rights_reserved" target="_blank">все права защишены</a></div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/glider.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

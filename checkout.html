@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <title>Оформление | Gazon</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+</head>
+
+<body>
+    <nav>
+        <div class="modal_side">
+            <div class="bar">
+                <div class="close_btn"><span></span></div>
+                <h4 class="bar_title">Товар добавлен</h4>
+                <div class="cart_modal"></div>
+                <div class="bar_links">
+                    <a href="./cart.html">Перейти в корзину</a>
+                    <a href="./checkout.html">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+        <a href="./index.html" class="logo">
+            <img src="./content/icons/logo.svg" alt="logo">
+        </a>
+        <div class="cart_btn">
+            <img src="./content/icons/cart.svg" alt="cart">
+            <p class="cart_btn_count"></p>
+        </div>
+        <div class="profile_btn">
+            <img src="./content/icons/profile.svg" alt="profile">
+        </div>
+        <div class="menu_btn">
+            <img src="./content/icons/menu.svg" alt="menu">
+        </div>
+        <div class="side_bar">
+            <div class="close_btn"><span></span></div>
+            <div class="menu_bar bar">
+                <h4 class="bar_title">Меню</h4>
+                <div class="menu_container">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html" class="menu_item">Главная</a></li>
+                            <li><a href="./about.html" class="menu_item">О нас</a></li>
+                            <li><a href="./contact.html" class="menu_item">Контакты</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="all">Товары</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./products.html" class="menu_item" data-group="popular"
+                                    data-producer="all">Популярное</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="discount"
+                                    data-producer="all">Акции</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="new"
+                                    data-producer="all">Новинки</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./products.html" class="menu_item" data-group="notebook"
+                                    data-producer="all">Ноутбуки</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="phone"
+                                    data-producer="all">Телефоны</a></li>   
+                            <li><a href="./products.html" class="menu_item" data-group="headphones"
+                                    data-producer="all">Наушники</a></li>    
+                        </ul>
+                        <ul>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="apple">Apple</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="xiaomi">Xiaomi</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="samsung">Samsung</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="acer">Acer</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="lenovo">Lenovo</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="hp">HP</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="huawei">Huawei</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="nokia">Nokia</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="jbl">JBL</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="sony">Sony</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="beats">Beats</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="sennheiser">Sennheiser</a></li>
+                            <li><a href="./products.html" class="menu_item" data-group="all"
+                                    data-producer="grado">Grado</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bar_links">
+                    <a href="./cart.html">Корзина</a>
+                    <a href="./login.html" class="menu_profile_btn">Личный кабинет</a>
+                </div>
+            </div>
+            <div class="cart_bar bar">
+                <h4 class="bar_title">Ваша корзина</h4>
+                <div class="cart_data_container">
+                    <div class="cart_data"></div>
+                </div>
+                <div class="cart_info">
+                    <p class="cart_count"></p>
+                    <p class="cart_price"></p>
+                </div>
+                <div class="bar_links">
+                    <a href="./cart.html">Перейти в корзину</a>
+                    <a href="./checkout.html">Оформить заказ</a>
+                </div>
+            </div>
+            <div class="login_bar bar">
+                <h4 class="bar_title">Войти в аккаунт</h4>
+                <form>
+                    <input type="text" placeholder="Введите ваш Email" required name="email" class="email">
+                    <input type="password" placeholder="Введите ваш пароль" required name="password" class="password">
+                    <button class="login_btn">Войти</button>
+                </form>
+                <h5 class="forgot_pass_btn">Забыли пароль?</h5>
+                <div class="reg_bar">
+                    <h4>Зарегистрироваться</h4>
+                    <p>Удобное завершение оформления заказа, также вы сможете отслеживать ваши заказы.</p>
+                </div>
+                <div class="bar_links">
+                    <a href="./registration.html">Регистрация</a>
+                </div>
+            </div>
+            <div class="forgot_pass_bar bar">
+                <h4 class="bar_title">Забыли пароль?</h4>
+                <p>Пожалуйста, введите свой адрес электронной почты ниже, чтобы получить ссылку для сброса пароля.</p>
+                <form action="index.html">
+                    <input type="text" placeholder="Введите ваш Email" required name="email">
+                    <button>Сбросить пароль</button>
+                </form>
+                <h5 class="forgot_pass_back_btn">Назад</h5>
+                <div class="bar_links">
+                    <a href="./login.html">Войти</a>
+                    <a href="./registration.html">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="checkout_section">
+            <div class="section_title">
+                <a href="./cart.html">Корзина</a>
+                <span>/</span>
+                <p>Оформить товар</p>
+            </div>
+            <div class="login_link">
+                <p>Сэкономьте время при оформлении заказа, если у вас уже есть аккаунт.</p>
+                <a href="./login.html">Войти в аккаунт</a>
+            </div>
+            <div class="checkout">
+                <div class="checkout_form">
+                    <form action="">
+                        <div class="form_box about_form_box">
+                            <h4><span>02.</span> Личные данные и адрес</h4>
+                            <input type="text" placeholder="ФИО *" name="name" required class="user_data_input">
+                            <input type="text" placeholder="Email *" name="email" required class="user_data_input">
+                            <input type="text" placeholder="Телефон *" name="phone" required class="user_data_input">
+                            <input type="text" placeholder="Город *" name="city" required class="user_data_input">
+                            <input type="text" placeholder="Адрес *" name="address" required class="user_data_input">
+                            <input type="password" placeholder="Придумайте пароль *" name="password" class="user_data_input">
+                        </div>
+                        <div class="form_box">
+                            <h4><span>03.</span> Способ оплаты</h4>
+                            <input type="radio" name="pay" id="pay1" checked>
+                            <label for="pay1">Оплата наличными</label>
+                            <input type="radio" name="pay" id="pay2">
+                            <label for="pay2">Онлайн оплата</label>
+                        </div>
+                        <div class="form_box">
+                            <h4><span>04.</span> Доставка</h4>
+                            <input type="radio" name="pay1" id="pay3" checked>
+                            <label for="pay3">доставить курьером</label>
+                            <input type="radio" name="pay1" id="pay4">
+                            <label for="pay4">сам заберу</label>
+                        </div>
+                        <button class="finish_btn">Оформить заказ</button>
+                    </form>
+                </div>
+                <div class="checkout_info">
+                    <h4><span>01. </span>Корзина покупок</h4>
+                    <div class="checkout_data"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_container">
+                <div class="footer_boxes">
+                    <ul>
+                        <h4>О компании</h4>
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                        <li><a href="https://hh.ru/" target="_blank">Вакансии</a></li>
+                        <li><a href="./login.html" class="footer_profile_btn">Личный кабинет</a></li>
+                    </ul>
+                    <ul>
+                        <h4>Контакты</h4>
+                        <li><a href="https://2gis.com/" target="_blank">Бишкек, Токтогула 8</a></li>
+                        <li><a href="mailto:gazon@.gmail.com">gazon@.gmail.com</a></li>
+                        <li><a href="tel:+996700533503">+996 700 533 503</a></li>
+                        <li><a href="tel:+996500533503">+996 500 533 503</a></li>
+                    </ul>
+                    <ul>
+                        <h4>Товары</h4>
+                        <li><a href="./products.html" data-group="all" data-producer="all">Все товары</a></li>
+                        <li><a href="./products.html" data-group="notebook" data-producer="all">Ноутбуки</a></li>
+                        <li><a href="./products.html" data-group="phone" data-producer="all">Телефоны</a></li>
+                        <li><a href="./products.html" data-group="headphones" data-producer="all">Наушники</a></li>
+                    </ul>
+                </div>
+                <div class="call_back">
+                    <h4>Оставьте номер, и мы вам перезвоним.</h4>
+                    <form action="index.html">
+                        <input type="text" placeholder="Ваш номер" required>
+                        <button>Отправить</button>
+                    </form>
+                    <div class="follow_us">
+                        <h4>Ищите нас в соц сетях</h4>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./content/icons/instagram.svg" alt="instagram"></a>
+                        <a href="https://wa.me/+996500533503" target="_blank"><img src="./content/icons/whatsapp.svg" alt="whatsapp"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./content/icons/youtube.svg" alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="footer_title">© 2019 gazon - <a href="https://en.wikipedia.org/wiki/All_rights_reserved" target="_blank">все права защишены</a></div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/checkout.js"></script>
+</body>
+
+</html>
